@@ -1,0 +1,17 @@
+﻿spring:
+  profiles:
+  active:
+  - dev
+# 三个横杠代表同一个文件配置多个不同的环境
+---
+spring:
+  profiles: dev    #开发环境
+  application:
+    name: microservicecloud-config-lyj-dev
+---
+spring:
+  profiles: test
+  application:
+    name: microservicecloud-config-lyj-test
+
+#   请保存为UTF-8格式    
